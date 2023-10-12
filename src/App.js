@@ -49,14 +49,11 @@ function App() {
   }
 
   function handleDelete(index) {
-    console.log("prima", index, list, operation)
     const ls = list.filter((item, idx) => idx !== index)
     setList(ls)
     const ops = operation.filter((itm, idx) => idx !== index)
     setOperation(ops)
     handleOperations(ops)
-    console.log("dopo", index, ls, ops)
-
   }
 
 
